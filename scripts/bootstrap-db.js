@@ -98,6 +98,9 @@ function setupFaunaDB() {
 }
 
 function checkForFaunaKey() {
+
+  console.log(process.env);
+
   if (!process.env.FAUNADB_SERVER_SECRET) {
     console.log(
       chalk.bold.red(
